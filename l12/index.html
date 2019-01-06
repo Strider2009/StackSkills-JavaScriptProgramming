@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        functions
+        <script>
+            var factor = 100;
+            c = 1;
+            // 1 meter is 100 cm 
+            function converter(m) {
+                var c = m * factor; 
+                return c;
+            }
+
+            // wont work because its in the wrong scope
+            console.log(c);
+
+
+            var a = 3;
+            console.log(converter(a));
+            console.log(converter(2.5));
+            console.log(converter(5.5));
+        </script>
+    </body>
+</html>
